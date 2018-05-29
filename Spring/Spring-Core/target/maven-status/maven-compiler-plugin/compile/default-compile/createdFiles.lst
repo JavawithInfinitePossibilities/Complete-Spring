@@ -1,0 +1,6 @@
+com\tutorials\spring\core\bean\impl\BikeInsurance.class
+com\tutorials\spring\core\bean\impl\OffersIndia.class
+com\tutorials\spring\core\bean\impl\CarInsurance.class
+com\tutorials\spring\core\bean\intf\Insurance.class
+com\tutorials\spring\core\bean\intf\IOffers.class
+com\tutorials\spring\core\bean\impl\OffersUS.class

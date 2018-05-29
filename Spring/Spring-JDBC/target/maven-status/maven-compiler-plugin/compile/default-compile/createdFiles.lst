@@ -1,0 +1,3 @@
+com\tutorials\spring\jdbc\DAO\repository\UserRepo.class
+com\tutorials\spring\jdbc\DAO\intf\IUserDAO.class
+com\tutorials\spring\jdbc\bean\User.class

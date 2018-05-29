@@ -1,0 +1,5 @@
+com\tutorials\spring\mvc\bean\InformationDetails.class
+com\tutorials\spring\mvc\controller\HelloController.class
+com\tutorials\spring\mvc\bean\Exercise.class
+com\tutorials\spring\mvc\controller\FitnessTrackerController.class
+com\tutorials\spring\mvc\controller\WelcomeController.class

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- This is commented as the parameterised constractor is removed -->
+	<bean id="carInsurance" class="com.tutorials.spring.core.bean.impl.CarInsurance">
+		<constructor-arg name="name" value="sidhanth" index="0"
+			type="java.lang.String" />
+		<constructor-arg name="insuranceId" value="1000" type="int"
+			index="1" />
+		<constructor-arg name="offers" index="2" ref="offers" />
+	</bean>
+	<bean id="bikeInsurance" class="com.tutorials.spring.core.bean.impl.BikeInsurance"
+		p:validation="2020">
+		<!-- <property name="validation" value="2020"/> -->
+		<property name="currentOffer" ref="offers" />
+	</bean>
+	<bean id="offers" class="com.tutorials.spring.core.bean.impl.OffersIndia"
+		scope="singleton" init-method="init" destroy-method="end">
+		<property name="offerValue" value="No current offer for now...">
+		</property>
+	</bean>
+</beans>
