@@ -1,7 +1,0 @@
-com\tutorials\java6\core\bean\FixedCosts.class
-com\tutorials\java6\core\services\ProjectedProfit.class
-com\tutorials\java6\core\bean\Sales.class
-com\tutorials\java6\core\abstractservices\MonthByMonthQuantity.class
-com\tutorials\java6\core\abstractservices\PolynomialQuantity.class
-com\tutorials\java6\core\bean\IncrementalCost.class
-com\tutorials\java6\core\bean\intf\QuantityOfInterest.class
