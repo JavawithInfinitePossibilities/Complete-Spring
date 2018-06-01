@@ -27,12 +27,12 @@ import com.tutorials.spring.core.bean.intf.Insurance;
 @ContextConfiguration(value = "classpath*:/Spring-Config.xml")
 public class TestSpringCore {
 
-	/*@Autowired
-	private ApplicationContext context;*/
+	@Autowired
+	private ApplicationContext context;
 
-	private ClassPathXmlApplicationContext context;
+	/*private ClassPathXmlApplicationContext context;*/
 
-	@Before
+	// @Before
 	public void init() {
 		/*This can be used as a part of Junit tutorials.*/
 		context = new ClassPathXmlApplicationContext("classpath*:/Spring-Config.xml");
@@ -50,6 +50,6 @@ public class TestSpringCore {
 		System.out.println("--------------------------------------------------");
 		System.out.println(carInsurance.showStatus());
 		System.out.println(bikeInsurance.showStatus());
-		context.close();
+		// context.close();
 	}
 }
