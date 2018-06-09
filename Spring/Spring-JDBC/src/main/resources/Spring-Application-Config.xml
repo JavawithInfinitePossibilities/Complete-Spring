@@ -12,11 +12,13 @@
 		location="classpath*:/Application-Property.properties" />
 
 	<!-- connect to database -->
-	<bean id="dataSource"
-		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	<!-- <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"> -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="${app.mysql.driverClassName}" />
 		<property name="url" value="${app.mysql.url}" />
 		<property name="username" value="${app.mysql.user.name}" />
 		<property name="password" value="${app.mysql.user.pwd}" />
+		<property name="initialSize" value="3" />
+		<property name="maxActive" value="10" />
 	</bean>
 </beans>
