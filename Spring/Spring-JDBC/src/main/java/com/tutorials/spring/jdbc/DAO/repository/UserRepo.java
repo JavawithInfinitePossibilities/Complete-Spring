@@ -33,7 +33,7 @@ public class UserRepo implements IUserDAO {
 	 * @see com.tutorials.spring.jdbc.DAO.intf.IUserDAO#getAllUser()
 	 */
 	public List<User> getAllUser() {
-		String getAllUser = "Select * from user";
+		String getAllUser = "Select * from user;";
 		List<User> users = new ArrayList<User>();
 		Connection connection = null;
 		PreparedStatement statement = null;
